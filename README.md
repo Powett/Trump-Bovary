@@ -6,4 +6,7 @@ DEFAULT : If n=3, every 3-words sequence in the generated text will be present s
 If n=1, the text is completely random (and makes no sense whatsoever)
 If n is too big, the generated text will just be a whole random chapter/speech
 
-Then run either .java and enjoy the result !
+RUN:
+$ javac -d ./bin  ./src/*.java
+$ cd bin
+$ java Trump (or java Bovary) > output.txt

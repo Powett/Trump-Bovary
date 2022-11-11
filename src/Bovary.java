@@ -4,11 +4,11 @@ public class Bovary {
 		String[] chapitres=new String[35];
 		int n=(args.length==0)? 3 : Integer.parseInt(args[0]);
 		for (int i=1;i<10;i++) {
-			chapitres[i-1]="src/bovary/"+"0"+Integer.toString(i)+".txt";
+			chapitres[i-1]="../data/bovary/"+"0"+Integer.toString(i)+".txt";
 		}
 		
 		for (int i=10;i<36;i++) {
-			chapitres[i-1]="src/bovary/"+Integer.toString(i)+".txt";
+			chapitres[i-1]="../data/bovary/"+Integer.toString(i)+".txt";
 		}
 		HMap chap=buildTable(chapitres, n);
 		generate(chap,n);

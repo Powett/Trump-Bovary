@@ -7,11 +7,11 @@ public class Trump {
 		int n = 3;
 		String[] speeches = new String[74];
 		for (int i = 0; i < 10; i++) {
-			speeches[i] = "src/trump/data/speech_" + "0" + Integer.toString(i) + ".txt";
+			speeches[i] = "../data/trump/data/speech_" + "0" + Integer.toString(i) + ".txt";
 		}
 
 		for (int i = 10; i < 74; i++) {
-			speeches[i] = "src/trump/data/speech_" + Integer.toString(i) + ".txt";
+			speeches[i] = "../data/trump/data/speech_" + Integer.toString(i) + ".txt";
 		}
 		HMap chap = Bovary.buildTable(speeches, n);
 		Bovary.generate(chap, n);
@@ -22,13 +22,13 @@ public class Trump {
 			FileWriter fw = new FileWriter("src/aa.txt",true);
 			fw.close();
 			for (int i = 1; i < 10; i++) {
-				fw = new FileWriter("src/trump/data/speech_" + "0" + Integer.toString(i) + ".txt",true);
+				fw = new FileWriter("../data/trump/data/speech_" + "0" + Integer.toString(i) + ".txt",true);
 				fw.write(Prefix.end);
 				fw.close();
 			}
 
 			for (int i = 10; i < 74; i++) {
-				fw = new FileWriter("src/trump/data/speech_" + Integer.toString(i) + ".txt",true);
+				fw = new FileWriter("../data/trump/data/speech_" + Integer.toString(i) + ".txt",true);
 				fw.write(" "+Prefix.end);
 				fw.close();
 			}
